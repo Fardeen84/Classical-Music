@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "197049300350",
+    "project_id": "classical-music-6ed2b",
+    "storage_bucket": "classical-music-6ed2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197049300350:android:e64964e68fb7d2d1c2af2f",
+        "android_client_info": {
+          "package_name": "com.example.classicalmusic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197049300350-8af2sf3cvmurc1scj0b8db7q57f2bkt0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.classicalmusic",
+            "certificate_hash": "c59d88f0af3ef58fd9ffff9aaa69096c2bc72eda"
+          }
+        },
+        {
+          "client_id": "197049300350-0qglsdshah7ehbkce1rg3dbl5a56g7e5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtDhsdI_BNPsoW-jwNh0IODUgrQNwDAQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "197049300350-0qglsdshah7ehbkce1rg3dbl5a56g7e5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

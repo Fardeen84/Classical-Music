@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".No_Internet">
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:gravity="center"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent">
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:layout_width="300dp"
+           android:layout_height="300dp"
+           app:civ_border_color="@color/black"
+           app:civ_border_width="3dp"
+           android:src="@drawable/no_internet"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="No Internet"
+           android:textColor="@color/black"
+           android:layout_marginTop="20dp"
+           android:textSize="25dp"
+           android:layout_marginBottom="30dp"
+           android:textStyle="bold"/>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center"
+           android:layout_marginStart="10dp"
+           android:layout_marginEnd="10dp">
+           <com.google.android.material.button.MaterialButton
+               android:id="@+id/refresh"
+               android:layout_width="150dp"
+               android:layout_height="60dp"
+               android:text="Refresh"
+               android:textAllCaps="false"
+               android:backgroundTint="@color/black"
+               app:strokeColor="@color/white"
+               app:strokeWidth="3dp"
+               app:cornerRadius="10dp"/>
+
+           <com.google.android.material.button.MaterialButton
+               android:id="@+id/offline"
+               android:layout_width="150dp"
+               android:layout_height="60dp"
+               android:text="Offline"
+               android:textAllCaps="false"
+               android:backgroundTint="@color/black"
+               android:layout_marginStart="20dp"
+               app:strokeColor="@color/white"
+               app:strokeWidth="3dp"
+               app:cornerRadius="10dp"/>
+       </LinearLayout>
+   </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

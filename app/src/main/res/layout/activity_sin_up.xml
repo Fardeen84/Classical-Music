@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SinUP"
+    android:background="#5975DA">
+
+ <androidx.constraintlayout.widget.ConstraintLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <LinearLayout
+         android:id="@+id/liner1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_marginTop="80dp"
+         >
+         <ImageView
+             android:layout_width="181dp"
+             android:layout_height="127dp"
+             android:src="@drawable/namedis"
+             android:layout_marginStart="30dp"/>
+         <ImageView
+             android:layout_width="106dp"
+             android:layout_height="108dp"
+             android:src="@drawable/logo"
+             android:layout_marginStart="30dp"
+             />
+     </LinearLayout>
+
+
+     <LinearLayout
+         android:id="@+id/liner2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         app:layout_constraintTop_toBottomOf="@+id/liner1"
+         android:layout_marginTop="80dp">
+
+         <com.google.android.material.textfield.TextInputLayout
+             android:id="@+id/input1"
+             android:layout_width="128dp"
+             android:layout_height="50dp"
+             app:boxCornerRadiusTopStart="10dp"
+             app:boxCornerRadiusTopEnd="10dp"
+             app:boxCornerRadiusBottomStart="10dp"
+             app:boxCornerRadiusBottomEnd="10dp"
+             app:boxBackgroundColor="@color/white"
+             android:layout_marginStart="55dp"
+             app:boxStrokeWidth="0dp"
+             app:boxStrokeColor="#0000ffff">
+             <com.google.android.material.textfield.TextInputEditText
+                 android:id="@+id/firstname"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:hint="First name"
+                 />
+         </com.google.android.material.textfield.TextInputLayout>
+
+
+         <com.google.android.material.textfield.TextInputLayout
+             android:id="@+id/input2"
+             android:layout_width="128dp"
+             android:layout_height="50dp"
+             app:boxCornerRadiusTopStart="10dp"
+             app:boxCornerRadiusTopEnd="10dp"
+             app:boxCornerRadiusBottomStart="10dp"
+             app:boxCornerRadiusBottomEnd="10dp"
+             app:boxBackgroundColor="@color/white"
+             tools:ignore="MissingConstraints"
+             android:layout_marginStart="17dp"
+             app:boxStrokeWidth="0dp"
+             app:boxStrokeColor="#0000ffff">
+             <com.google.android.material.textfield.TextInputEditText
+                 android:id="@+id/lastname"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:hint="Last name"
+
+                 />
+         </com.google.android.material.textfield.TextInputLayout>
+
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/liner3"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         app:layout_constraintTop_toBottomOf="@+id/liner2"
+         android:layout_marginTop="15dp">
+
+         <com.google.android.material.textfield.TextInputLayout
+             android:id="@+id/inpu3"
+             android:layout_width="275dp"
+             android:layout_height="50dp"
+             app:boxCornerRadiusTopStart="10dp"
+             app:boxCornerRadiusTopEnd="10dp"
+             app:boxCornerRadiusBottomStart="10dp"
+             app:boxCornerRadiusBottomEnd="10dp"
+             app:boxBackgroundColor="@color/white"
+             android:layout_marginStart="55dp"
+             app:startIconDrawable="@drawable/mail"
+             app:startIconTint="@color/black"
+             app:boxStrokeWidth="0dp"
+             app:boxStrokeColor="#0000ffff"
+             >
+             <com.google.android.material.textfield.TextInputEditText
+                 android:id="@+id/email"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:hint="Enter your Email"
+                 />
+         </com.google.android.material.textfield.TextInputLayout>
+
+
+         <com.google.android.material.textfield.TextInputLayout
+             android:id="@+id/inpu4"
+             android:layout_width="275dp"
+             android:layout_height="50dp"
+             app:boxCornerRadiusTopStart="10dp"
+             app:boxCornerRadiusTopEnd="10dp"
+             app:boxCornerRadiusBottomStart="10dp"
+             app:boxCornerRadiusBottomEnd="10dp"
+             app:boxBackgroundColor="@color/white"
+             android:layout_marginStart="55dp"
+             tools:ignore="MissingConstraints"
+             android:layout_marginTop="10dp"
+             app:startIconDrawable="@drawable/lock"
+             app:startIconTint="@color/black"
+             app:passwordToggleEnabled="true"
+             app:passwordToggleTint="@color/black"
+             app:boxStrokeWidth="0dp"
+             app:boxStrokeColor="#0000ffff">
+             <com.google.android.material.textfield.TextInputEditText
+                 android:id="@+id/password"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:hint="password"
+                 android:inputType="textPassword"
+                 />
+         </com.google.android.material.textfield.TextInputLayout>
+
+
+
+         <com.google.android.material.textfield.TextInputLayout
+             android:id="@+id/inpu5"
+             android:layout_width="275dp"
+             android:layout_height="50dp"
+             app:boxCornerRadiusTopStart="10dp"
+             app:boxCornerRadiusTopEnd="10dp"
+             app:boxCornerRadiusBottomStart="10dp"
+             app:boxCornerRadiusBottomEnd="10dp"
+             app:boxBackgroundColor="@color/white"
+             android:layout_marginStart="55dp"
+             android:layout_marginTop="10dp"
+             tools:ignore="MissingConstraints"
+             app:startIconDrawable="@drawable/lock"
+             app:startIconTint="@color/black"
+             app:passwordToggleEnabled="true"
+             app:passwordToggleTint="@color/black"
+             app:boxStrokeWidth="0dp"
+             app:boxStrokeColor="#0000ffff"
+             >
+             <com.google.android.material.textfield.TextInputEditText
+                 android:id="@+id/conpassword"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:hint="confirm password"
+                 android:inputType="textPassword"
+                 />
+         </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+     </LinearLayout>
+
+
+
+     <com.google.android.material.button.MaterialButton
+         android:id="@+id/cancel_button"
+         android:layout_width="121dp"
+         android:layout_height="45dp"
+         app:cornerRadius="5dp"
+         android:backgroundTint="@color/white"
+         app:layout_constraintTop_toBottomOf="@+id/liner3"
+         app:layout_constraintStart_toStartOf="parent"
+         android:layout_marginStart="55dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
+         android:text="calcel"
+         android:textColor="#0F2E9D"
+         android:textSize="11dp"
+         />
+
+     <com.google.android.material.button.MaterialButton
+         android:id="@+id/creataccont"
+         android:layout_width="121dp"
+         android:layout_height="45dp"
+         app:cornerRadius="5dp"
+         android:backgroundTint="#0F2E9D"
+         app:layout_constraintTop_toBottomOf="@+id/liner3"
+         app:layout_constraintStart_toEndOf="@+id/cancel_button"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintBottom_toBottomOf="parent"
+         android:layout_marginTop="20dp"
+         android:text="Creat accunt"
+         android:textSize="10sp"
+         app:layout_constraintHorizontal_bias=".3"
+
+
+         />
+
+ </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Classical Music</string>
+    <string name="dont">Don’t have an account?</string>
+    <string name="text1">By clicking log in you agree to our</string>
+    <string name="term">Terms&amp;condition and</string>
+</resources>
